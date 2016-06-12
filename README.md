@@ -44,8 +44,9 @@ RX_ZhiHu是模仿知乎日报，基于MVP架构的、遵循Material Design设计
 
 
 ## 参考项目
-- [FlowGeek](https://git.oschina.net/handoop/FlowGeek)
+- [FlowGeek](https://git.oschina.net/handoop/FlowGeek):开源中国Android客户端MVP架构Material Design设计风格版
 
+- [RxSamples](https://github.com/rengwuxian/RxJavaSamples):RxJava 和 Retrofit 结合使用的几个最常见使用方式举例。
 
 ## Note
 - 本人技术和见识都有限，一些解决方案可能幼稚的可怕，希望大家不吝赐教，共同进步。
