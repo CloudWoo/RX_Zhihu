@@ -43,7 +43,8 @@ RX_ZhiHu是模仿知乎日报，基于MVP架构的、遵循Material Design设计
 - [Android平台上MVP的介绍](https://github.com/bboyfeiyu/android-tech-frontier/blob/master/issue-12%2FAndroid%E4%B8%8AMVP%E7%9A%84%E4%BB%8B%E7%BB%8D.md#使用mvp)
 
 
-
+## 参考项目
+- [FlowGeek](https://git.oschina.net/handoop/FlowGeek)
 
 
 ## Note
