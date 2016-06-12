@@ -1,20 +1,16 @@
 package com.haomiao.cloud.rx_zhihu.service;
 
-import android.util.Log;
-
 import com.haomiao.cloud.rx_zhihu.model.ZhiHuBanner;
 import com.haomiao.cloud.rx_zhihu.model.ZhiHuDaily;
 import com.haomiao.cloud.rx_zhihu.model.ZhiHuDailyItem;
 import com.haomiao.cloud.rx_zhihu.model.ZhiHuLatest;
 import com.haomiao.cloud.rx_zhihu.utils.DateUtil;
-import com.haomiao.cloud.rx_zhihu.utils.data.DataCache;
-import com.haomiao.cloud.rx_zhihu.utils.data.Database;
+import com.haomiao.cloud.rx_zhihu.utils.DataCache;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import rx.Observable;
-import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.functions.Func1;
@@ -52,6 +48,7 @@ public class ServiceAPI {
                     @Override
                     public void call(ArrayList<ZhiHuDailyItem> zhiHuDailyItems) {
                         new DataCache().cacheData(zhiHuDailyItems, DateUtil.getInstance().getDate(pageNum));
+
                     }
                 })
                 .subscribeOn(Schedulers.io())
@@ -84,11 +81,6 @@ public class ServiceAPI {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
     }
-
-
-
-
-
 
 
 }

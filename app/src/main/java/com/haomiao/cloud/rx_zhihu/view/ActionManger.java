@@ -21,21 +21,11 @@ public class ActionManger {
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     public static void toDailyDetail(Activity activity, int id){
-//        Intent intent = new Intent(context, DailyItemActivity.class);
-//        intent.putExtra("id", ""+id);
-//        context.startActivity(intent);
-
         final Pair<View, String>[] pairs = TransitionHelper.createSafeTransitionParticipants(activity, true);
         Intent i = new Intent(activity, DailyItemActivity.class);
         i.putExtra("id", ""+id);
         ActivityOptionsCompat transitionActivityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(activity, pairs);
         activity.startActivity(i, transitionActivityOptions.toBundle());
-
-
-
-
-
-
     }
 
 

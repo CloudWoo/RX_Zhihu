@@ -36,18 +36,11 @@ public class BannerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View inflate = inflater.inflate(R.layout.fragment_blank, null);
         ButterKnife.bind(this, inflate);
         ZhiHuBanner item = (ZhiHuBanner) getArguments().getSerializable("1");
-
-        if(item != null){
-            Log.d("BannerFragment", item.getImages());
-            tvDaf.setText(item.getTitle());
-            PicassoUtils.displayCacheImage(item.getImages(), imageView3);
-        }else {
-            Log.d("BannerFragment", "no");
-        }
+        tvDaf.setText(item.getTitle());
+        PicassoUtils.displayCacheImage(item.getImages(), imageView3);
         return inflate;
     }
 

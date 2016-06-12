@@ -1,10 +1,9 @@
-package com.haomiao.cloud.rx_zhihu.utils.data;
+package com.haomiao.cloud.rx_zhihu.utils;
 
 import android.util.Log;
 
 import com.haomiao.cloud.rx_zhihu.CApplication;
 import com.haomiao.cloud.rx_zhihu.presenter.MainPresenter;
-import com.haomiao.cloud.rx_zhihu.utils.DateUtil;
 import com.jakewharton.disklrucache.DiskLruCache;
 
 import java.io.BufferedOutputStream;
@@ -118,20 +117,14 @@ public class DataCache {
 
 
     public  Observable<Integer> getFirstCacheFile() {
-
+        cacheNum = 0;
         return Observable.create(new Observable.OnSubscribe<Integer>() {
             @Override
             public void call(Subscriber<? super Integer> subscriber) {
-//                cacheNum++;
-//                subscriber.onNext(cacheNum);
-//                subscriber.onCompleted();
-                ObjectInputStream objectInputStream = null;
                 try {
                     String key = hashKeyForDisk(DateUtil.getInstance().getDate(cacheNum));
                     snapShot = CApplication.getDiskLruCache().get(key);
                     if (snapShot != null) {
-                        InputStream is = snapShot.getInputStream(0);
-                        objectInputStream = new ObjectInputStream(is);
                         subscriber.onNext(cacheNum);
                     }else {
                         subscriber.onNext(null);
@@ -143,7 +136,7 @@ public class DataCache {
                 cacheNum ++ ;
             subscriber.onCompleted();
             }
-        }).repeat(100).first(new Func1<Integer, Boolean>() {
+        }).repeat(10).first(new Func1<Integer, Boolean>() {
             @Override
             public Boolean call(Integer integer) {
                 return snapShot != null;

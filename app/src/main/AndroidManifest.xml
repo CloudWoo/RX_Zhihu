@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.haomiao.cloud.rx_zhihu">
-
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:name=".CApplication"
         android:allowBackup="true"
@@ -11,24 +9,16 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.activity.MainActivity" />
         <activity
-            android:name=".view.activity.Main2Activity"
+            android:name=".view.activity.MainActivity"
             android:label="@string/title_activity_main2"
             android:theme="@style/LightTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.DailyItemActivity" />
-        <activity
-            android:name=".test.Main3Activity"
-            android:theme="@style/MaterialAnimations">
-
-        </activity>
-        <activity android:name=".test.Main4Activity"></activity>
     </application>
 
 </manifest>

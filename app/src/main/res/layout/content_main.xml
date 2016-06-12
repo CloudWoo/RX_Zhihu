@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.haomiao.cloud.rx_zhihu.view.activity.Main2Activity"
-    tools:showIn="@layout/app_bar_main2">
+    tools:context=".view.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
 <com.haomiao.cloud.rx_zhihu.view.widget.AutoSwipeRefreshLayout
     android:layout_width="match_parent"
     android:id="@+id/swipeRefreshLayout"

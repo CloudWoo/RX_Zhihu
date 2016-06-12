@@ -84,7 +84,6 @@ public class AutoScrollObservable {
                             return isAlive && !isDragging && isVisible;
                         }
                     })
-//                    .compose(context.<Long>bindToLifecycle())
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(new Subscriber<Long>() {

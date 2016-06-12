@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 
 import com.haomiao.cloud.rx_zhihu.R;
 import com.haomiao.cloud.rx_zhihu.utils.SPUtils;
-import com.haomiao.cloud.rx_zhihu.view.activity.Main2Activity;
+import com.haomiao.cloud.rx_zhihu.view.activity.MainActivity;
 
 /**
  * Project RX_Zhihu.
@@ -24,7 +24,7 @@ public class MyRelativelayout extends RelativeLayout {
 
     public MyRelativelayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-        IntentFilter filter = new IntentFilter(Main2Activity.ACTION_MODE_CHANGE);
+        IntentFilter filter = new IntentFilter(MainActivity.ACTION_MODE_CHANGE);
         BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {

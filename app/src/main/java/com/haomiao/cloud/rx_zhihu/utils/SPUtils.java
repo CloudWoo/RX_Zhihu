@@ -21,6 +21,14 @@ public class SPUtils {
     private SharedPreferences sp = mContext.getSharedPreferences("RXZhiHu", 0);
     private SharedPreferences.Editor edit =  sp.edit();
 
+    public boolean isFirstIn() {
+        return sp.getBoolean("FirstIn", true);
+    }
+
+    public void setFirstIn(boolean firstIn) {
+        edit.putBoolean("FirstIn", firstIn);
+        edit.apply();
+    }
 
     @IntDef({THEME_DARK, THEME_LIGHT})
     @Retention(RetentionPolicy.SOURCE)

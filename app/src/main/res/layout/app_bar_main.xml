@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/container"
     android:fitsSystemWindows="true"
-    tools:context="com.haomiao.cloud.rx_zhihu.view.activity.Main2Activity">
+    tools:context=".view.activity.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main2"/>
+    <include layout="@layout/content_main"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

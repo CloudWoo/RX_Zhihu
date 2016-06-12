@@ -16,7 +16,6 @@ import retrofit.RxJavaCallAdapterFactory;
  */
 public class ServiceFactory {
     public static <T> T createServiceFrom(final Class<T> serviceClass, String endpoint) {
-
         OkHttpClient okHttpClient = new OkHttpClient();
         okHttpClient.setConnectTimeout(5, TimeUnit.SECONDS); //设置超时时间
         Retrofit adapter = new Retrofit.Builder()
