@@ -1,12 +1,10 @@
 package com.haomiao.cloud.rx_zhihu.utils;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.squareup.picasso.Picasso;
 
 
 public class GlideUtils {

@@ -98,25 +98,6 @@ public class MainActivity extends BaseActivity<MainPresenter>
             getPresenter().request(pageNum, MainPresenter.STATE_REFRESH);
             getPresenter().requestBanner();
         }
-//
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).show();
-//                Snackbar snackbar =
-//                        Snackbar.make(container, "SnackbarTest", Snackbar.LENGTH_LONG).setAction("Action", new View.OnClickListener() {
-//                            @Override
-//                            public void onClick(View v) {
-//                                Snackbar snackbar =
-//                                        Snackbar.make(container, "ActionClick", Snackbar.LENGTH_LONG);
-//                                setSnackbarMessageTextColor(snackbar, getResources().getColor(R.color.colorPrimaryDark));
-//                                snackbar.show();
-//                            }
-//                        });
-//                setSnackbarMessageTextColor(snackbar, Color.parseColor("#FFFFFF"));
-//                snackbar.show();
-//            }
-//        });
     }
 
     private void inUI() {
@@ -190,7 +171,6 @@ public class MainActivity extends BaseActivity<MainPresenter>
         View view = snackbar.getView();
         Snackbar.SnackbarLayout ve = (Snackbar.SnackbarLayout) snackbar.getView();
         ve.setBackgroundColor(color);
-
     }
 
     @Override
@@ -284,8 +264,7 @@ public class MainActivity extends BaseActivity<MainPresenter>
 
     public void onError(final int state) {
         swipeRefreshLayout.setRefreshing(false);
-        Snackbar.make(container, "网络出错", Snackbar.LENGTH_INDEFINITE).setAction("adfad", new View.OnClickListener() {
-
+        Snackbar.make(container, "网络出错", Snackbar.LENGTH_INDEFINITE).setAction("重试", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 swipeRefreshLayout.setRefreshing(true);

@@ -46,6 +46,7 @@ public class ViewPagerIndicator extends View{
 	}
 	public ViewPagerIndicator(Context context, AttributeSet attrs) {
 		super(context, attrs);
+
 		mPaint = new Paint();
 		mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 		mPaint.setColor(getResources().getColor(R.color.grey_300));

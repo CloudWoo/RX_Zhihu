@@ -7,36 +7,44 @@ RX_ZhiHu是模仿知乎日报，基于MVP架构的、遵循Material Design设计
 
 
 ## 主要开源组件
-- [RxJava/RxAndroid](https://github.com/ReactiveX/RxJava)：Java的响应式编程的库，相当强大且相当赞！！推荐大家深入到源码，体会设计的强大。
+- [RxJava/RxAndroid](https://github.com/ReactiveX/RxJava)：Java的响应式编程的库，实现异步操作的第三方库，链式调用，逻辑简洁。
 
-- [Retrofit](https://github.com/square/retrofit)：优雅的HTTP请求开源库，使用动态代理实现，也很赞！推荐你深入源码。
+- [Retrofit](https://github.com/square/retrofit)：优雅的HTTP请求开源库,与Rxjava组合使用。
 
-- [Picasso](https://github.com/square/picasso)：强大的图像加载库，Square公司真是业界良心。
+- [Glide](https://github.com/square/picasso)：Google推荐的图片加载库。
 
-- [ButterKnift](https://github.com/JakeWharton/butterknife)：从此告别findViewById
+- [ButterKnift](https://github.com/JakeWharton/butterknife)：一步搞定findViewById()
 
-- [RxLifecycle](https://github.com/trello/RxLifecycle)：在Acvitity和Fragment中管理订阅者/观察者的生命周期。
+- [RxLifecycle](https://github.com/trello/RxLifecycle)：在Acvitity和Fragment中管理订阅者/观察者的生命周期,避免Activity/Fragment无法销毁导致的内存泄露。
 
-- [Nucleus](https://github.com/konmik/nucleus)：MVP框架基础库，我使用的MVP基础类就是来源于他，感谢这位开发者。
+- [RxBinding](https://github.com/JakeWharton/RxBinding):处理控件异步调用的方式, 也是由Square公司开发, Jake负责编写
+
+- [Nucleus](https://github.com/konmik/nucleus)：MVP框架基础库。
 
 - [Gson](https://github.com/google/gson)：Google的json解析库。
 
 
 
-##推荐Document
-- [RxReactive](http://reactivex.io/)
+##推荐文章
 
-- [Retrofit](http://square.github.io/retrofit/#contributing)
 
-- [Retrofit技术博文](https://futurestud.io/blog/retrofit-getting-started-and-android-client)
+- [给 Android 开发者的 RxJava 详解](http://gank.io/post/560e15be2dca930e00da1083)
 
-- [MVP](http://www.tuicool.com/articles/uIjEJj7)
+- [深入浅出RxJava](http://blog.csdn.net/lzyzsd/article/details/41833541/)
 
-- [Material Design中文版](http://wiki.jikexueyuan.com/project/material-design/)
- 
-- [RxJava技术博文](http://gank.io/post/560e15be2dca930e00da1083)
+- [RxJava操作符](http://blog.chinaunix.net/uid-20771867-id-5187376.html)
 
-- [MVP入坑文](https://github.com/bboyfeiyu/android-tech-frontier/blob/master/issue-12%2FAndroid%E4%B8%8AMVP%E7%9A%84%E4%BB%8B%E7%BB%8D.md#使用mvp)
+- [Retrofit](http://square.github.io/retrofit/)
+
+- [使用RxBinding响应控件的异步事件](http://www.jianshu.com/p/c2c7c46e6b97/comments/1338430)
+
+- [MVC,MVP,MVVM与架构经验谈](https://www.sdk.cn/news/2501)
+
+- [Android平台上MVP的介绍](https://github.com/bboyfeiyu/android-tech-frontier/blob/master/issue-12%2FAndroid%E4%B8%8AMVP%E7%9A%84%E4%BB%8B%E7%BB%8D.md#使用mvp)
+
+
+
+### [完整代码，请移步](https://git.oschina.net/cloud_woo/RX_ZhiHu)
 
 
 ## Note

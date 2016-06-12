@@ -33,7 +33,7 @@
         <item name="android:textColorPrimary">@android:color/white</item>
         <item name="colorPrimary">@color/black_800</item>
         <item name="colorPrimaryDark">@color/black_900</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/white</item>
         <item name="textColor">@color/white</item>
         <item name="cardViewRippleColor">@color/white</item>
         <item name="cardViewBackground">@color/black_600</item>
@@ -48,7 +48,7 @@
         <item name="android:textColorPrimary">@android:color/white</item>
         <item name="colorPrimary">@color/blue_300</item>
         <item name="colorPrimaryDark">@color/blue_400</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/white</item>
         <item name="textColor">@color/black_900</item>
         <item name="cardViewRippleColor">@color/grey_300</item>
         <item name="cardViewBackground">@color/white</item>
