@@ -44,7 +44,6 @@ RX_ZhiHu是模仿知乎日报，基于MVP架构的、遵循Material Design设计
 
 
 
-### [完整代码，请移步](https://git.oschina.net/cloud_woo/RX_ZhiHu)
 
 
 ## Note
