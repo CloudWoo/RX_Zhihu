@@ -1,10 +1,7 @@
 package com.haomiao.cloud.rx_zhihu.view.adapter;
 
 import android.content.Context;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +10,7 @@ import android.widget.TextView;
 
 import com.haomiao.cloud.rx_zhihu.model.ZhiHuDailyItem;
 import com.haomiao.cloud.rx_zhihu.R;
-import com.haomiao.cloud.rx_zhihu.utils.PicassoUtils;
+import com.haomiao.cloud.rx_zhihu.utils.GlideUtils;
 import com.haomiao.cloud.rx_zhihu.view.widget.spinkit.SpinKitView;
 
 import java.util.List;
@@ -111,12 +108,12 @@ public class MainAdapter extends CBaseRecyclerViewAdapter<ZhiHuDailyItem> {
             ViewHolder viewHolder = (ViewHolder) holder;
             final ZhiHuDailyItem item = itemList.get(position);
             viewHolder.item_title.setText(item.getTitle());
-            PicassoUtils.displayImage(item.getImages(), viewHolder.item_pic);
+            GlideUtils.displayImage(item.getImages(), viewHolder.item_pic);
         } else if (holder instanceof DateViewHolder) {
             DateViewHolder viewHolder = (DateViewHolder) holder;
             viewHolder.item_date.setText(itemList.get(position).getDate());
             viewHolder.item_title.setText(itemList.get(position).getTitle());
-            PicassoUtils.displayImage(itemList.get(position).getImages(), viewHolder.item_pic);
+            GlideUtils.displayImage(itemList.get(position).getImages(), viewHolder.item_pic);
         } else if (holder instanceof FooterViewHolder) {
             FooterViewHolder viewHolder = (FooterViewHolder) holder;
             if (onLoadMoreListener != null && (mState == STATE_LOAD_MORE)) {

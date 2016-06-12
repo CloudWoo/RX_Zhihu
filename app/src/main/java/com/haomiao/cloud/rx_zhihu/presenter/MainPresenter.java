@@ -77,7 +77,6 @@ public class MainPresenter extends BasePresenter<MainActivity> {
                     }, new Action2<MainActivity, Throwable>() {
                         @Override
                         public void call(MainActivity view, Throwable throwable) {
-                            Log.d("MainPresenter", throwable.toString());
                             view.onError(mState);
                         }
                     }));
@@ -119,7 +118,7 @@ public class MainPresenter extends BasePresenter<MainActivity> {
                         .subscribe(MainPresenter.this.split(new Action2<MainActivity, ArrayList<ZhiHuDailyItem>>() {
                             @Override
                             public void call(MainActivity view, ArrayList<ZhiHuDailyItem> data) {
-                                if(pageNum == 0 ){
+                                if(pageNum == 0){
                                     data.set(0, new ZhiHuDailyItem(
                                             data.get(0).getImages(),
                                             data.get(0).getId(),
@@ -132,7 +131,6 @@ public class MainPresenter extends BasePresenter<MainActivity> {
                         }, new Action2<MainActivity, Throwable>() {
                             @Override
                             public void call(MainActivity view, Throwable throwable) {
-                                Log.d("MainPresenter", throwable.toString());
                                 view.onError(mState);
                             }
                         }));
@@ -160,7 +158,6 @@ public class MainPresenter extends BasePresenter<MainActivity> {
                         }, new Action2<MainActivity, Throwable>() {
                             @Override
                             public void call(MainActivity view, Throwable throwable) {
-                                Log.d("MainPresenter", throwable.toString());
                                 view.onError(mState);
                             }
                         }));

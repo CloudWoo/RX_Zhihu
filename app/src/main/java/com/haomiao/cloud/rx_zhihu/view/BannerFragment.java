@@ -3,7 +3,6 @@ package com.haomiao.cloud.rx_zhihu.view;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,7 @@ import android.widget.TextView;
 
 import com.haomiao.cloud.rx_zhihu.model.ZhiHuBanner;
 import com.haomiao.cloud.rx_zhihu.R;
-import com.haomiao.cloud.rx_zhihu.utils.PicassoUtils;
+import com.haomiao.cloud.rx_zhihu.utils.GlideUtils;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -40,7 +39,7 @@ public class BannerFragment extends Fragment {
         ButterKnife.bind(this, inflate);
         ZhiHuBanner item = (ZhiHuBanner) getArguments().getSerializable("1");
         tvDaf.setText(item.getTitle());
-        PicassoUtils.displayCacheImage(item.getImages(), imageView3);
+        GlideUtils.displayImage(item.getImages(), imageView3);
         return inflate;
     }
 

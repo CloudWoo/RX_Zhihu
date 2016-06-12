@@ -7,7 +7,7 @@ import android.content.pm.PackageManager;
 import android.os.Environment;
 
 import com.haomiao.cloud.rx_zhihu.utils.LocalDisplay;
-import com.haomiao.cloud.rx_zhihu.utils.PicassoUtils;
+import com.haomiao.cloud.rx_zhihu.utils.GlideUtils;
 import com.haomiao.cloud.rx_zhihu.utils.SPUtils;
 import com.jakewharton.disklrucache.DiskLruCache;
 
@@ -38,7 +38,7 @@ public class CApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        PicassoUtils.init(getApplicationContext());
+        GlideUtils.init(getApplicationContext());
         INSTANCE = this;
         SPUtils.init(getApplicationContext());
         LocalDisplay.init(getApplicationContext());
