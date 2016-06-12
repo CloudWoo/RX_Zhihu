@@ -33,7 +33,6 @@ public class SPUtils {
     @IntDef({THEME_DARK, THEME_LIGHT})
     @Retention(RetentionPolicy.SOURCE)
     public @interface Theme {}
-//    private int theme;
 
     public SPUtils() {
     }

@@ -51,6 +51,7 @@ public class MainPresenter extends BasePresenter<MainActivity> {
     protected void onTakeView(MainActivity view) {
         super.onTakeView(view);
         mState = STATE_DEFAULT;
+        // 读取缓存
         if(!SPUtils.getInstance().isFirstIn()){
             new DataCache().getFirstCacheFile()
                     .flatMap(new Func1<Integer, Observable<ArrayList<ZhiHuDailyItem>>>() {
@@ -98,7 +99,6 @@ public class MainPresenter extends BasePresenter<MainActivity> {
     @Override
     public void onCreate(Bundle savedState) {
         super.onCreate(savedState);
-
         restartable(REQUEST_ITEMS, new Func0<Subscription>() {
             @Override
             public Subscription call() {
