@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+
+
+    <style name="LightTheme" parent="LightTheme.Base">
+        <item name="android:statusBarColor">@color/blue_300</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="DarkTheme" parent="DarkTheme.Base">
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+
+
+
+
+</resources>

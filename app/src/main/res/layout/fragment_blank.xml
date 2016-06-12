@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.BannerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView3"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center_horizontal|top" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_daf"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="@string/hello_blank_fragment"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

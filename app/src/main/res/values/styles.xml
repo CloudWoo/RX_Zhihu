@@ -1,0 +1,267 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay1" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+    <style name="DarkTheme.Base" parent="AppTheme">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="colorPrimary">@color/black_800</item>
+        <item name="colorPrimaryDark">@color/black_900</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColor">@color/white</item>
+        <item name="cardViewRippleColor">@color/white</item>
+        <item name="cardViewBackground">@color/black_600</item>
+        <item name="action_mode">@string/action_mode_light</item>
+        <item name="spinKit_color">@color/black_900</item>
+        <item name="android:windowBackground">@color/black_700</item>
+        <item name="AppBarOverlay">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+
+    <style name="LightTheme.Base" parent="AppTheme">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="colorPrimary">@color/blue_300</item>
+        <item name="colorPrimaryDark">@color/blue_400</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColor">@color/black_900</item>
+        <item name="cardViewRippleColor">@color/grey_300</item>
+        <item name="cardViewBackground">@color/white</item>
+        <item name="action_mode">@string/action_mode_dark</item>
+        <item name="spinKit_color">@color/blue_300</item>
+        <item name="AppBarOverlay">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:windowBackground">@color/grey_300</item>
+    </style>
+
+
+
+
+
+
+    <style name="MaterialAnimations" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/material_animations_primary</item>
+        <item name="android:colorPrimaryDark">@color/material_animations_primary_dark</item>
+        <item name="android:colorAccent">@color/material_animations_accent</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/text_light</item>
+        <item name="android:statusBarColor">@color/material_animations_primary_dark</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <item name="android:titleTextAppearance">@style/MaterialAnimations.TextAppearance.Title</item>
+        <item name="android:windowBackground">@color/sample_blue</item>
+
+    </style>
+    <style name="MaterialAnimations.TextAppearance.Title.Inverse" parent="android:TextAppearance.Material.Title">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+    </style>
+
+    <style name="MaterialAnimations.TextAppearance.Title" parent="android:TextAppearance.Material.Title">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+
+
+
+
+
+
+
+
+    <style name="LightTheme" parent="LightTheme.Base">
+
+    </style>
+
+    <style name="DarkTheme" parent="DarkTheme.Base">
+
+    </style>
+
+    <style name="SpinKitView">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="android:maxHeight">32dip</item>
+    </style>
+
+
+    <style name="SpinKitView.ChasingDots">
+        <item name="SpinKit_Style">ChasingDots</item>
+    </style>
+
+    <style name="SpinKitView.Circle">
+        <item name="SpinKit_Style">Circle</item>
+    </style>
+
+
+    <style name="SpinKitView.CubeGrid">
+        <item name="SpinKit_Style">CubeGrid</item>
+    </style>
+
+    <style name="SpinKitView.DoubleBounce">
+        <item name="SpinKit_Style">DoubleBounce</item>
+    </style>
+
+    <style name="SpinKitView.FadingCircle">
+        <item name="SpinKit_Style">FadingCircle</item>
+    </style>
+
+    <style name="SpinKitView.FoldingCube">
+        <item name="SpinKit_Style">FoldingCube</item>
+    </style>
+
+    <style name="SpinKitView.Pulse">
+        <item name="SpinKit_Style">Pulse</item>
+    </style>
+
+    <style name="SpinKitView.RotatingPlane">
+        <item name="SpinKit_Style">Circle</item>
+    </style>
+
+    <style name="SpinKitView.ThreeBounce">
+        <item name="SpinKit_Style">Circle</item>
+    </style>
+
+    <style name="SpinKitView.WanderingCubes">
+        <item name="SpinKit_Style">Circle</item>
+    </style>
+
+    <style name="SpinKitView.Wave">
+        <item name="SpinKit_Style">Wave</item>
+    </style>
+
+
+    <style name="SpinKitView.Large">
+        <item name="android:minWidth">76dip</item>
+        <item name="android:maxWidth">76dip</item>
+        <item name="android:minHeight">76dip</item>
+        <item name="android:maxHeight">76dip</item>
+    </style>
+
+
+    <style name="SpinKitView.Large.ChasingDots">
+        <item name="SpinKit_Style">ChasingDots</item>
+    </style>
+
+    <style name="SpinKitView.Large.Circle">
+        <item name="SpinKit_Style">Circle</item>
+    </style>
+
+
+    <style name="SpinKitView.Large.CubeGrid">
+        <item name="SpinKit_Style">CubeGrid</item>
+    </style>
+
+    <style name="SpinKitView.Large.DoubleBounce">
+        <item name="SpinKit_Style">DoubleBounce</item>
+    </style>
+
+    <style name="SpinKitView.Large.FadingCircle">
+        <item name="SpinKit_Style">FadingCircle</item>
+    </style>
+
+    <style name="SpinKitView.Large.FoldingCube">
+        <item name="SpinKit_Style">FoldingCube</item>
+    </style>
+
+    <style name="SpinKitView.Large.Pulse">
+        <item name="SpinKit_Style">Pulse</item>
+    </style>
+
+    <style name="SpinKitView.Large.RotatingPlane">
+        <item name="SpinKit_Style">RotatingPlane</item>
+    </style>
+
+    <style name="SpinKitView.Large.ThreeBounce">
+        <item name="SpinKit_Style">ThreeBounce</item>
+    </style>
+
+    <style name="SpinKitView.Large.WanderingCubes">
+        <item name="SpinKit_Style">WanderingCubes</item>
+    </style>
+
+    <style name="SpinKitView.Large.Wave">
+        <item name="SpinKit_Style">Wave</item>
+    </style>
+
+
+    <style name="SpinKitView.Small">
+        <item name="android:minWidth">16dip</item>
+        <item name="android:maxWidth">16dip</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+
+    <style name="SpinKitView.Small.ChasingDots">
+        <item name="SpinKit_Style">ChasingDots</item>
+    </style>
+
+    <style name="SpinKitView.Small.Circle">
+        <item name="SpinKit_Style">Circle</item>
+    </style>
+
+
+    <style name="SpinKitView.Small.CubeGrid">
+        <item name="SpinKit_Style">CubeGrid</item>
+    </style>
+
+    <style name="SpinKitView.Small.DoubleBounce">
+        <item name="SpinKit_Style">DoubleBounce</item>
+    </style>
+
+    <style name="SpinKitView.Small.FadingCircle">
+        <item name="SpinKit_Style">FadingCircle</item>
+    </style>
+
+    <style name="SpinKitView.Small.FoldingCube">
+        <item name="SpinKit_Style">FoldingCube</item>
+    </style>
+
+    <style name="SpinKitView.Small.Pulse">
+        <item name="SpinKit_Style">Pulse</item>
+    </style>
+
+    <style name="SpinKitView.Small.RotatingPlane">
+        <item name="SpinKit_Style">RotatingPlane</item>
+    </style>
+
+    <style name="SpinKitView.Small.ThreeBounce">
+        <item name="SpinKit_Style">ThreeBounce</item>
+    </style>
+
+    <style name="SpinKitView.Small.WanderingCubes">
+        <item name="SpinKit_Style">WanderingCubes</item>
+    </style>
+
+    <style name="SpinKitView.Small.Wave">
+        <item name="SpinKit_Style">Wave</item>
+    </style>
+
+</resources>
